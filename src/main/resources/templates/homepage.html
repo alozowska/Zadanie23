@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Książki</title>
+
+</head>
+<body>
+
+
+<ul>
+    <li th:each="book: ${books}">
+        <a th:href="'/ksiazka/' + ${book.id}" th:text="${book.title}">Tutaj tresc linku</a>
+
+    </li>
+</ul>
+
+
+</body>
+</html>

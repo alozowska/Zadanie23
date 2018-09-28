@@ -16,8 +16,7 @@ public class Book {
     @Enumerated(EnumType.STRING)
     private Category category;
 
-    public Book() {
-    }
+
 
     public long getId() {
         return id;
